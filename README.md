@@ -541,18 +541,33 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
-
-
+ ```
+1001 | RAM | 10000 | HR
+1001 | RAM | 10000 | HR
+1002 | TOM |  5000 | ADMIN
+1003 | JOE |  7000 | DEVELOPER
+1005 | SAM |  5000 | HR
+1004 | SIT |  7000 | DEV
+1003 | JOE |  7000 | DEVELOPER
+1001 | RAM | 10000 | HR
+```
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
-
-
+```
+www.yahoo.com
+www.google.com
+www.mrcet....com
+```
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-
+```
+www.yahoo.com
+www.google.com
+www.mrcet.com
+```
 
 mkdir backupdir
  
@@ -560,7 +575,17 @@ mv backup.tar backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-
+```
+bench.py
+file21
+file22
+file23
+hello.c
+hello.js
+newfile
+readme.txt
+urllist.txt
+```
 
 tar -xvf backup.tar
 ## OUTPUT
